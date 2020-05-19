@@ -52,6 +52,7 @@ c = 3
 from algorithms import MEC
 
 MECa = MEC.MECA(X, c)
-U, V, t, f = MECa.iteration()	
+clusterResult = MECa.iteration()	
+U = clusterResult['U']
 ```
 

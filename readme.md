@@ -37,6 +37,7 @@ iteration 返回的是一个字典，说明如下表
 | U_f  |     最后两个隶属度矩阵的Frobenius范数      |
 | V_f  |     最后两个聚类中心矩阵的Frobenius范数      |
 | use_time  |     算法运行用时，单位为s      |
+
 使用示例：
 
 ```python

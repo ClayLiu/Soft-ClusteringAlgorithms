@@ -27,7 +27,9 @@ class ClusteringAlgorithm():
         import time
         start = time.clock()
 
-        V = np.random.rand(self.feature_num, self.c)
+        random_choice = np.random.randint(0, self.n, self.c)
+        initial_V = self.X[:, random_choice]
+        V = initial_V.copy()
         U = self.__get_initial_U__()
         
         for t in range(iter_num):

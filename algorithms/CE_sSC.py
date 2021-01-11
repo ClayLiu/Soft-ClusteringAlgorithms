@@ -84,7 +84,7 @@ class CE_sSCA(Semi_SupervisedClusteringAlgorithm):
         return new_U
 
 
-    def interation(self, initial_U : np.ndarray, iter_num = 200, quit_epsilon = epsilon):
+    def iteration(self, initial_U : np.ndarray, iter_num = 200, quit_epsilon = epsilon):
         assert initial_U.shape[MatrixShapeIndex.row] == self.c and \
             initial_U.shape[MatrixShapeIndex.column] == self.n, "初始隶属度矩阵大小不匹配！"
         
